@@ -1,50 +1,35 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plant</title>
+        <link rel="stylesheet" href="style.css">
+
     </head>
-        <style>
-        @media only screen and (max-width: 768px) {
-        /* For mobile phones: */
-        [class*="col-"] {
-          width: 100%;
-        }
-      }
-      #container {
-          display: flex;
-      }
-      #header{
-        position: fixed;
-        top: 0;
-        min-height: 75px;
-        padding: 0px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: transparent;
-      }
-      </style>
-    <header id="header">
+            
+       <div id="page-wrapper">
+
+        <header id="header">
+        <div class="container">
         <div class="logo">
             <img id="header-img" 
             src="https://cdn.shopify.com/s/files/1/0082/4701/7531/files/Plant_Store_Logo-1_360x.png?v=1589435793"
             alt="the_plant_store_logo"  />
-        </div>
-    
-    
-    
-        <nav id="nav-bar">
+         </div> 
+         <div class="menu">
+             <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#plant">Plant</a></li>
                 <li><a class="nav-link" href="#pottery">Pottery</a></li>
-                <li><a class="nav-link" href="#giftcard">Giftcard</a></li>
                 <li><a class="nav-link" href="#learnmore">Learn More</a></li>
             </ul>
-             
-        </nav>
+            </nav>
+        </div> 
+      </div>
+       
     </header>
     <body>
-        <div class="container">
+        <div class="containers">
             <section id="plant">
               <div class="grid">
                 <div class="icon"><i class="plantstore"></i></div>
@@ -53,9 +38,20 @@
                   <p>
                     The Plant Store
                   </p>
+                  <h2 id="image-container">
+                    <img class="mySlides" src="images/aglaonema_stripes.jpg" style="width:100% height= auto">
+                </h2>
+                <h2 id="image-container">
+                    <img class="mySlides" src="images/golden_barrel_cactus.jpg" style="width:100% height= auto">
+                </h2>
+                <h2 id="image-container">
+                    <img class="mySlides" src="images/microsorum_thailandicum.jpg"style="width:100% height= auto">
+                </h2>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                 </div>
               </div>
-              <div class="container">
+              <div class="containers">
                 <section id="pottery">
                   <div class="grid">
                     <div class="icon"><i class="pottery_class"></i></div>
@@ -66,18 +62,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="container">
-                    <section id="giftcard">
-                      <div class="grid">
-                        <div class="icon"><i class="giftcardclass"></i></div>
-                        <div class="desc">
-                          <h2>Gift Card</h2>
-                          <p>
-                            The Plant Store Gift Card
-                          </p>
-                        </div>
-                      </div>
-                      
+                                        
                     <section id="learnmore">
                         <iframe id="video" width="560" height="315" 
                             src="https://www.youtube.com/embed/lZjulDJviOY" frameborder="0" 
@@ -90,12 +75,8 @@
                       
                 
 
-        <h2 id="image-container"></h2>
-        <img src="">
-        <img class="mySlides" src="">
-        <img class="mySlides" src="">
-        <img class="mySlides" src="">
-        <img class="mySlides" src="">
+        
+       
 
         <form id="form" action="https://www.freecodecamp.com/email-submit">
 
@@ -126,7 +107,29 @@
 
 
   
-    </body>
+    
         <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    
+    
     </body>
+
 </html>

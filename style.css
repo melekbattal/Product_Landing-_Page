@@ -1,0 +1,102 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body {
+    position: relative;
+}
+#page-wrapped {
+   position: relative;
+
+}
+
+
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header {
+    position: fixed;
+    top:0;
+    height: 150px;
+    width: 100%;
+    display: flex;
+   
+    background: rgb(149, 197, 152);
+
+}
+.logo > img {
+    display: block;
+}
+#header-img {
+    height: 150px;
+   
+}
+#form {
+    position: relative;
+}
+form > input {
+    width:100%;
+    height: 40px;
+    border-radius: 40px;
+    background: cornsilk;
+    border:none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 0 10px;
+    
+
+}
+#email {
+       width: 100%;
+       height: 50px;
+       border-radius: 40px;
+       background: coral;
+       justify-content: center;
+    }
+.nav-link{
+    color: darkslategray;
+
+}
+.menu {
+    padding: 0 15 px;
+}
+.btn {
+    font-size: 15px;
+    color: darkgreen;
+}
+
+ul {
+    display:flex ;
+   
+}
+li {
+    margin-left: 150px;
+}
+@media (max-width:700 px){
+    body{
+        background: darkgrey;
+    }
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20 px;
+    }
+}
+@media (max-width: 500px){
+   .menu {
+       display: none;
+   }
+
+
+}
