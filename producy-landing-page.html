@@ -1,26 +1,111 @@
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+        <style>
+        @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+      #container {
+          display: flex;
+      }
+      #header{
+        position: fixed;
+        top: 0;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: transparent;
+      }
+      </style>
     <header id="header">
         <div class="logo">
             <img id="header-img" 
-            src="C:\Users\armada\Documents\Product_Landing _Page\images/LOGO.png"
-            alt="changes-logo"  />
+            src="https://cdn.shopify.com/s/files/1/0082/4701/7531/files/Plant_Store_Logo-1_360x.png?v=1589435793"
+            alt="the_plant_store_logo"  />
         </div>
+    
+    
+    
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#clothing">Clothing</a></li>
-                <li><a class="nav-link" href="#accessories">Accessories</a></li>
-                <li><a class="nav-link" href="#denim">Denim</a></li>
+                <li><a class="nav-link" href="#plant">Plant</a></li>
+                <li><a class="nav-link" href="#pottery">Pottery</a></li>
+                <li><a class="nav-link" href="#giftcard">Giftcard</a></li>
+                <li><a class="nav-link" href="#learnmore">Learn More</a></li>
             </ul>
-            
+             
         </nav>
+    </header>
+    <body>
+        <div class="container">
+            <section id="plant">
+              <div class="grid">
+                <div class="icon"><i class="plantstore"></i></div>
+                <div class="desc">
+                  <h2>Plant</h2>
+                  <p>
+                    The Plant Store
+                  </p>
+                </div>
+              </div>
+              <div class="container">
+                <section id="pottery">
+                  <div class="grid">
+                    <div class="icon"><i class="pottery_class"></i></div>
+                    <div class="desc">
+                      <h2>Pottery</h2>
+                      <p>
+                        please note that all pottery is pick-up only
+                      </p>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <section id="giftcard">
+                      <div class="grid">
+                        <div class="icon"><i class="giftcardclass"></i></div>
+                        <div class="desc">
+                          <h2>Gift Card</h2>
+                          <p>
+                            The Plant Store Gift Card
+                          </p>
+                        </div>
+                      </div>
+                      
+                    <section id="learnmore">
+                        <iframe id="video" width="560" height="315" 
+                            src="https://www.youtube.com/embed/lZjulDJviOY" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </section>
+
+                         
+                            
+                      
+                
+
         <h2 id="image-container"></h2>
         <img src="">
-        <form id="form">
-            <input type="email" id="email" placeholder="Enter your email address" required></br>
-            <input type="submit" id="submit" value="Get Started" class="btn">
-         </form>
+        <img class="mySlides" src="">
+        <img class="mySlides" src="">
+        <img class="mySlides" src="">
+        <img class="mySlides" src="">
 
-    </header>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+            <input name="email" type="email" id="email" placeholder="Enter your email address" required>
+        </input>
+            <input type="submit" id="submit" value="Get Started" class="btn">
+        </input>
+        </form>
+
+    
 
 
 
@@ -41,7 +126,7 @@
 
 
   
-    <body>
+    </body>
         <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
